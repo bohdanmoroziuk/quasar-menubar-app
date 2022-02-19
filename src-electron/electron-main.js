@@ -21,6 +21,7 @@ catch (_) { }
 
 const menubar = createMenubar({
   index: process.env.APP_URL,
+  icon: path.resolve(__dirname, 'icons/menubarIconTemplate.png'),
   browserWindow: {
     width: 270,
     minWidth: 270,
