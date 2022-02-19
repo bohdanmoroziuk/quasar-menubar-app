@@ -6,6 +6,4 @@
 
 <script setup lang="ts">
 import Counter from 'src/components/Counter.vue';
-
-
 </script>
