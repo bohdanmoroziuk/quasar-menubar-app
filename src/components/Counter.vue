@@ -19,7 +19,7 @@
       <q-btn
         flat
         round
-        color="black"
+        color="secondary"
         size="lg"
         icon="restart_alt"
         @click.stop="reset"

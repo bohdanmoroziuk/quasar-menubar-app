@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-floating-promises */
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-import { app, nativeTheme } from 'electron'
+import { app, nativeTheme, ipcMain } from 'electron'
 import path from 'path'
 import os from 'os'
 
@@ -40,6 +40,10 @@ const menubar = createMenubar({
 
 menubar.on('ready', () => {
   console.log('app is ready');
+});
+
+ipcMain.handle('quit-app', () => {
+  app.quit();
 });
 
 /*

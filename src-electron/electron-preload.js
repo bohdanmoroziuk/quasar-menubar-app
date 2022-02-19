@@ -8,10 +8,12 @@
  * in package.json > dependencies and NOT in devDependencies
  *
  * Example (injects window.myAPI.doAThing() into renderer thread):
- *
- *   import { contextBridge } from 'electron'
- *
- *   contextBridge.exposeInMainWorld('myAPI', {
- *     doAThing: () => {}
- *   })
  */
+
+import { contextBridge, ipcRenderer } from 'electron';
+
+contextBridge.exposeInMainWorld('system', {
+  quitApp: async () => {
+    await ipcRenderer.invoke('quit-app');
+  },
+});
