@@ -1,6 +1,6 @@
-# QuasarMenubarApp (quasar-menubar-app)
+# Quasar Menubar App
 
-A Quasar Framework app
+> An example of a menu bar application created with Quasar and Electron.
 
 ## Install the dependencies
 
@@ -31,7 +31,3 @@ npm run format
 ```bash
 quasar build
 ```
-
-### Customize the configuration
-
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
